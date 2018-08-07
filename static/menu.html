@@ -1,0 +1,232 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+
+
+  <title>Py-plug-in</title>
+<meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- combined & minified reset, bootstrap, bootstrap-responsive & bootstrap docs stylesheets -->
+  <link rel="stylesheet" href="css/reset-bootstrap-responsive-docs.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/prettyphoto.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Alternate color's - replace deafault with >> | yellow | red | green | blue | orange | purple | brown -->
+  <link rel="stylesheet" href="css/skin/default.css">
+
+  <!-- Start Demo Styleswitch -->
+  <link rel="alternate stylesheet" type="text/css" media="screen" title="yellow" href="css/skin/yellow.css" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" title="green" href="css/skin/green.css" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" title="blue" href="css/skin/blue.css" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" title="purple" href="css/skin/purple.css" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" title="brown" href="css/skin/brown.css" />
+  <!-- End Demo Styleswitch -->
+  
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+
+  <link rel="shortcut icon" href="img/icons/favicon.png">
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114-precomposed.png">
+
+  <script src="js/libs/jquery-1.7.2.min.js"></script>
+  <script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+  
+</head>
+<body>
+
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> Upgrade to a different browser or install Google Chrome Frame to experience this site.</p>
+<![endif]--><style type="text/css">
+.slide-out-div {
+  background-color: #242424;
+  font-size: 11px;
+  padding: 20px 10px 0 20px;
+  width: 100px;
+  z-index: 999;
+  display: none;
+}
+
+
+.stCols span {
+  text-indent: -9999px;
+}
+.stCols span,
+.stBgs a {
+  cursor: pointer;
+  float: left;
+  height: 25px;
+  margin: 0 3px 3px 0;
+  padding: 0;
+  text-decoration: none;
+  width: 40px;
+}
+input[type="submit"]{
+    width:80px;
+    height:30px;
+    border:0px;
+    background-color:white;
+    backgrount-opacity:0.2;
+    color:#FF6347;
+    font-size:18px
+}
+</style>
+
+<div class="slide-out-div">
+
+	<a href="#" class="handle">Content</a>
+
+    <div class="stCols">
+        <a href="javascript:chooseStyle('none', 60)" checked="checked">
+            <span style="background-color:#C43C35;">&nbsp;</span>
+        </a>
+        <a href="javascript:chooseStyle('yellow', 60)" checked="checked">
+            <span style="background-color:#FFCC00;">&nbsp;</span>
+        </a>
+        <a href="javascript:chooseStyle('green', 60)" checked="checked">
+            <span style="background-color:#339966;">&nbsp;</span>
+        </a>
+        <a href="javascript:chooseStyle('blue', 60)" checked="checked">
+            <span style="background-color:#3399CC;">&nbsp;</span>
+        </a>
+        <a href="javascript:chooseStyle('purple', 60)" checked="checked">
+            <span style="background-color:#CC3399;">&nbsp;</span>
+        </a>
+        <a href="javascript:chooseStyle('brown', 60)" checked="checked">
+            <span style="background-color:#996633;">&nbsp;</span>
+        </a>
+    </div>
+</div>
+<header>
+    <div class="outer-nav">
+    <div class="container">
+    <div class="row">
+    <div class="span12">
+        <a class="nav-btn hidden-desktop" data-toggle="collapse" data-target=".nav-collapse">
+        </a>
+        <nav id="combined-nav" class="nav-collapse">
+            <ul class="menu">
+                <li><a href="index.html"> Home</a></li>		  
+                <li class="active"><a href="menu.html">MENU</a></li>
+                <li><a href="contact.html"> Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    </div>
+    </div>
+</header> 
+<div class="exclamation title margin-bottom">
+	<div class="page-header">
+		<h1>&nbsp &nbsp MENU <small>Everything you want in python</small></h1>
+    </div>    
+</div>
+
+<div class="span4">
+    <h3>A</h3>
+    <p class="lead">
+    <form action="./cgi-bin-python/select_name.py" method="GET">
+    <input type="submit" name="name" value="ad3"> 
+    <input type="submit" name="name" value="aggdraw"> 
+    <input type="submit" name="name" value="aiohttp"> 
+    <input type="submit" name="name" value="akima"> 
+    <form>
+    </p>
+</div>
+</div>
+
+<div class="span4">
+    <h3>B</h3>
+    <p class="lead">
+    <form action="./cgi-bin-python/select_name.py" method="GET">
+    <input type="submit" name="name" value="biopython"> 
+    <input type="submit" name="name" value="bitarray"> 
+    <input type="submit" name="name" value="blaze"> 
+    <input type="submit" name="name" value="blist"> 
+    </form>
+    </p>
+</div>
+
+<div class="span4">
+    <h3>C</h3>
+    <p class="lead">
+    <form action="./cgi-bin-python/select_name.py" method="GET">
+    <input type="submit" name="name" value="cairocffi"> 
+    <input type="submit" name="name" value="cantera"> 
+    <input type="submit" name="name" value="carray"> 
+    <input type="submit" name="name" value="cartopy"> 
+    </form>
+    </p>
+</div> 
+
+<div class="span4">
+    <h3>D</h3>
+    <p class="lead">
+    <form action="./cgi-bin-python/select_name.py" method="GET">
+    <input type="submit" name="name" value="datrie"> 
+    <input type="submit" name="name" value="delny"> 
+    <input type="submit" name="name" value="dipy"> 
+    <input type="submit" name="name" value="dulwich"> 
+    <input type="submit" name="name" value="dynd"> 
+    </form>
+    </p>
+</div> 
+
+<div class="span4">
+    <h3>E</h3>
+    <p class="lead">
+    <form action="./cgi-bin-python/select_name.py" method="GET">
+    <input type="submit" name="name" value="ecos"> 
+    <input type="submit" name="name" value="enable"> 
+    <input type="submit" name="name" value="enaml"> 
+    <input type="submit" name="name" value="entropy"> 
+    <input type="submit" name="name" value="ets"> 
+    </form>
+    </p>
+</div> 
+
+<div class="span4">
+    <h3>F</h3>
+    <p class="lead">
+    <form action="./cgi-bin-python/select_name.py" method="GET">
+    <input type="submit" name="name" value="fabio"> 
+    <input type="submit" name="name" value="fann2"> 
+    <input type="submit" name="name" value="fastcache"> 
+    <input type="submit" name="name" value="fastparquet"> 
+    </form>
+    </p>
+</div> 
+
+<script src="js/libs/bootstrap/bootstrap-modal.html"></script>
+<script src="js/libs/bootstrap/tooltip.js"></script>
+<script src="js/libs/bootstrap/popover.js"></script>
+<script src="js/libs/bootstrap/application.js"></script>
+
+
+<!-- End Footer --><!-- Start Footer Scripts -->
+<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.hoverIntent.minified.js"></script>
+<script src="js/plugins.js"></script>
+<!-- Start Demo Styleswitch -->
+<script src="styleswitcher/tabslider.js"></script>
+<!-- End Demo Styleswitch -->
+<script src="styleswitcher/styleswitch.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/script.js"></script>
+<!-- Google -->
+
+
+</body>
+
+</html>

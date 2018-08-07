@@ -1,0 +1,48 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+import MySQLdb
+import os
+
+print '<html>'
+
+# 连接数据库
+conn = MySQLdb.connect(host='localhost',port=0,user='root',passwd='qweasd',db='py_plug_in')
+# 获取游标
+cursor = conn.cursor()
+# 构造查询语句
+
+ev = os.environ
+method = ev.get('REQUEST_METHOD').upper()
+if method == 'GET':
+    '''
+    GET请求只有query_string
+    取出第一个字符,表示要查找的表名(转为大写)
+    table_name 表示当前所要查找的表名
+    name 表示在这个表中查找name为这里name值的version
+    '''
+    query_string = ev.get('QUERY_STRING')
+    table_name = query_string[5].upper()
+    name = query_string[5:]
+else:
+    '''
+    POST方法根据Content-Length来读取数据
+    '''
+    content_length = ev.get('CONTENT_LENGTH')
+    print content_length
+
+
+sql = "SELECT version FROM %s where name='%s'"%(table_name,name)
+
+cursor.execute(sql)
+results = cursor.fetchall()
+for r in results:
+    print r[0]
+    print '</br>'
+
+# 关闭游标连接
+cursor.close()
+# 关闭数据库连接
+conn.close()
+
+print '</html>'

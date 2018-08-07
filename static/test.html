@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    </head>
+    <body>
+    <h1>这里是 index.html 页面</h1>
+    <img src="./image/cat.jpeg" width="150" height="150">
+
+    <br>
+    <form action="./cgi-bin-python/select.py" method="GET">
+        <input type="submit" value="Select All">
+    </form> 
+
+    <form action="./cgi-bin-python/insert.py" method="GET">
+        <input type="text" name="id" placeholder="id">
+        <br>
+        <input type="text" name="name" placeholder="name">
+        <br>
+        <input type="submit" value="Insert">
+    </form> 
+
+    <form action="/cgi-bin/hello" method="GET">
+        <input type="text" name="firstdata" placeholder="first data">
+        <br>
+        <input type="text" name="lastdata" placeholder="second data">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    </body>
+</html>
+
+
