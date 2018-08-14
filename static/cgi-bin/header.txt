@@ -1,0 +1,72 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>Py-plug-in</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- combined & minified reset, bootstrap, bootstrap-responsive & bootstrap docs stylesheets -->
+<link rel="stylesheet" href="css/reset-bootstrap-responsive-docs.css">
+<link rel="stylesheet" href="css/fontawesome.css">
+<link rel="stylesheet" href="css/prettyphoto.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/skin/default.css"> 
+</head>
+<body>
+<style type="text/css">
+input[type="submit"]{
+width:80px;
+height:30px;
+border:0px;
+       background-color:white;
+       backgrount-opacity:0.2;
+color:#FF6347;
+      font-size:18px
+
+}
+.outer-nav {
+    background-color: #F1584A;
+    border-bottom: 2px solid #F53A26;
+
+}
+a,.colored,
+    .underline a:hover,
+    .single-item a:hover, 
+    .page-stats li span.stat-title {
+color: #F53A26;
+
+    }
+html, body {
+width:100%;
+padding:0;
+margin:0;
+
+}
+.exclamation h1, 
+    .exclamation h2, 
+    .exclamation h3, 
+    .exclamation h4, 
+    .exclamation h5, 
+    .exclamation h6,
+    .filter.btn-group .btn {
+color:#555;
+      text-shadow: 1px 1px 0 #F2F2F2, 1px 2px 0 #B1B1B2;
+
+    }
+.exclamation h1 {
+    font-size: 40px;
+    line-height: 45px;
+
+}
+ul {
+margin:0;
+padding:0;
+        list-style-image:none;
+        list-style:none outside none;
+
+}
+.span4{width:300px}
+h1,h2,h3,h4,h5,h6{margin:0;font-family:inherit;font-weight:bold;color:inherit;text-rendering:optimizelegibility}
+.page-header{padding-bottom:17px;margin:18px 0;border-bottom:1px solid #eee}
+</style>
+
